@@ -33,6 +33,8 @@ SET "voodoo_conf=.\dgVoodoo.conf"
 :: The path of the SetDPI executable.
 SET "set_dpi=.\SetDPI.exe"
 
+SET "monitor_number=1"
+
 :: Add a registry entry that tells Windows to use "System (enhanced)" Custom DPI
 :: Scaling for the DAOrigins executable. This cannot be accomplished with a
 :: Side-by-Side manifest, unfortunately. We have to do this on every launch
@@ -113,19 +115,19 @@ SET "error_message=Resolution scaling only supports the following scaling percen
 :: Set original_scaling to the current Scale percentage value (as seen in
 :: System > Display > Scale). 
 FOR /f "tokens=* USEBACKQ" ^
-%%f IN (`%set_dpi% "value"`) ^
+%%f IN (`%set_dpi% "value" "%monitor_number%"`) ^
 DO (SET /a "original_scaling=%%f")
 
 :: Set the Scale percentage value as seen in System > Display > Scale to our
 :: desired scaling percentage.
-%set_dpi% "%scaling_h%"
+%set_dpi% "%scaling_h%" "%monitor_number%"
 
 :: Start Dragon Age Origins
 .\%dao_executable_name%
 
 :: When Dragon Age Origins closes, reset the Scale percentage value as seen in
 :: System > Display > Scale to the value it was before.
-%set_dpi% "%original_scaling%"
+%set_dpi% "%original_scaling%" "%monitor_number%"
 
 :: Uncomment in order to debug issues if they appear:
 :: PAUSE
