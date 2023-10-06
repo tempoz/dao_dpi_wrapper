@@ -40,7 +40,7 @@ Can this all be done manually? Yes, of course. Is it fiddly and irritating to do
 
 ## Limitations
 
-- Only Works on your primary monitor. You can change this, but you'll need to go read the README in the SetDPI repo and modify the batch file accordingly.
+- If you want to run Dragon Age Origins on a monitor that is not your primary one, you will need to change the `monitor_number` to the number of the monitor in question in the `wrapper.bat` file.
 
 - Changing the game's resolution in-game will not behave correctly, though if you then close the game and re-open it, it should work again.
 
