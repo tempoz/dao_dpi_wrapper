@@ -40,6 +40,8 @@ Can this all be done manually? Yes, of course. Is it fiddly and irritating to do
 
 ## Limitations
 
+- Only Works on your primary monitor. You can change this, but you'll need to go read the README in the SetDPI repo and modify the batch file accordingly.
+
 - Changing the game's resolution in-game will not behave correctly, though if you then close the game and re-open it, it should work again.
 
 - As mentioned above, the two resolutions must be the same aspect ratio and even still only some scaling factors are supported. If you hit this, you'll see an error message explaining the supported scaling factors and what yours was.
