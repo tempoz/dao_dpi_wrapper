@@ -34,7 +34,7 @@ Can this all be done manually? Yes, of course. Is it fiddly and irritating to do
 
 - Copy the `wrapper.bat` file in this repository next to (in the same folder as) your `DAOrigins.exe`.
 
-- Run `DAOriginsConfig.exe` and select the resolution you want the UI to display at (smaller resolutions mean a bigger UI). Remember that whatever resolution you select must match the aspect ratio of the resolution you selected in the dgVoodoo step.
+- Run `DAOriginsConfig.exe` and select the resolution you want the UI to display at (smaller resolutions mean a bigger UI). Remember that whatever resolution you select must match the aspect ratio of the resolution you selected in the dgVoodoo step. Don't forget to save the setting before closing.
 
 - (Optional) To avoid an irritating dialog box on game close, you can [disable the Program Compatibility Assistant](https://www.isunshare.com/computer/why-and-how-to-disable-program-compatibility-assistant-service.html). If this page disappears, there are instructions included in the second comment block in the `wrapper.bat` file.
 
