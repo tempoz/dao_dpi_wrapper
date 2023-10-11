@@ -2,7 +2,7 @@
 
 I wrote a batch file. Can't recommend it.
 
-Wraps the launching of the DAOrigins executable so we can set the registry value to ensure it is run in compatibility mode `System (enhanced)` (which is "reset" every time it closes, so must be set every time we open it) and adjusts the DPI to an appropriate value so that the mouse behaves correctly when using dgVoodoo2 to force the resolution of Dragon Age Origins. Note that the problem you will see if this isn't working correctly is the cursor either being trapped in a box in the top-left of the screen, or the cursor being free to move *way* offscreen to the right or the bottom of the screen.
+Wraps the launching of the DAOrigins executable so we can set the registry value to ensure it is run in compatibility mode `System (enhanced)` (which is "reset" every time it closes, so must be set every time we open it) and adjusts the DPI to an appropriate value so that the mouse behaves correctly when using dgVoodoo2 to force the resolution of Dragon Age Origins. Note that the problem you will see if this isn't working correctly is the cursor either being trapped in a box in the top-left of the screen, or the cursor being free to move *way* offscreen to the right or the bottom of the screen. `revert.bat` is provided to remove the registry entry `wrapper.bat` adds in case something goes wrong or you wish to stop using the wrapper for any reason.
 
 # Overview
 
